@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+:root{
+  --main-color: #fff;
+  --second-color: rgb(252, 0, 0);
+  --third-color: #000;
+  --forth-color:  rgb(55, 0, 255);
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/img/BMW1.png);
+    background-position: center;
+    background-size: cover;
+    padding: 20px 10%;
+    transition: background-image 0.25s;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}   
+
+.nav .logo{
+    width: 160px;
+    cursor: pointer;
+}
+
+.nav .btn{
+    background-color: var(--third-color);
+    color: var(--main-color);
+    /* margin: 10px 20px; */
+    padding: 10px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.card_product-info{
+    margin-top: 10%;
+}
+
+.card_product-info h2{
+    color: var(--second-color);
+    font-weight: 900;
+}
+
+.card_product-info h1{
+    font-size: 85px;
+}
+
+.card_product-info p{
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.card_product-info h3{
+    font-weight: 700;
+}
+
+.color--options{
+   display: flex;
+   margin-top: 20px;
+}
+
+.color--options div{
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.color--options .red{
+    cursor: pointer;
+    background-color: var(--second-color);
+}
+
+.color--options .blue{
+    cursor: pointer;
+    background-color: var(--forth-color);
+}
+
+.color--options .black{
+    background-color: var(--third-color);
+    cursor: pointer;
+}
